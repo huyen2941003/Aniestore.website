@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Aniestore</title>
+    <link rel="shortcut icon" type="image/png" href="assets/logoAnie.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bao.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="assets/logoAnie.png" alt=""></a>
+        <nav class="header">
+            <a class="active" href="home.html">Trang chủ</a>
+            <div class="item dropdown">
+                <a href="#wp-products">Sản phẩm</a>
+                <ul class="drop-1">
+                    <a style="padding: 0;" href="product.html"><li>Tất cả sản phẩm</li> </a>
+                    <a style="padding: 0;" href="ao.html"><li>Bộ Sưu Tập</li> </a>
+                </ul>
+            </div>
+            <div class="item dropdown">
+                <a href="#giam_gia">Sale off</a>
+                <ul class="drop-2">
+                    <a style="padding: 0;" href="saleoff.html"><li>Sắp diễn ra</li> </a>
+                </ul>
+            </div>
+            <a href="contactus.html">Liên hệ</a>
+            <a href="review.html">Đánh giá</a>
+            <a class="active" href="cuahang.html">Cửa hàng</a>
+        </nav>
+
+        <div id="actions" class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <div class="item shopping">
+                <div id="">
+                    <i class="icofont-cart cart"></i>
+                </div>
+                <span class="hart">0</span>
+                <div id="cart-items" class="L_cart hiden">
+                    <h1>Giỏ hàng <button id="showFormBtn">Đặt hàng</button></h1>
+                    <div class="ListCart">
+                        <div class="inner" style="display: flex; justify-content: space-between; font-size: 14px; margin:10px 40px; ">
+                            <p>Sản phẩm</p>
+                            <p>Giá</p>
+                            <p>Số lượng</p>
+                            <p>Chọn</p>
+                        </div>
+                    </div>
+                    <div class="CheckOut">
+                        <div class="total">Tổng tiền:&nbsp <b class="money">0</b>  <sup>đ</sup> </div>
+                        <div class="closeShopping">Close</div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay-dathang">
+                <i class="fas fa-times" id="closeButton"></i>
+            </div>
+            <div id="formContainer" style="display: none;">
+                <form id="myForm">
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Họ tên của bạn:</span>
+                            <input type="text" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                            <span>Số điện thoại: </span>
+                            <input type="text" placeholder="vd: 0123456789">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Tên sản phẩm:</span>
+                            <input type="test" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                            <span>Số lượng: </span>
+                            <input type="number" placeholder="vd: 0123456789">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Ngày đặt hàng: </span>
+                            <input type="datetime-local">
+                        </div>
+                        <div class="input">
+                            <span>Ngày có thể nhận hàng: </span>
+                            <input type="datetime-local">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Địa chỉ:</span>
+                            <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input">
+                            <span>Ghi chú: </span>
+                            <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Đặt hàng ngay" class="btn">
+                </form>
+            </div>
+
+            <div class="user-list dropdown">
+                <a href="#" class="fas fa-user"></a>
+                <ul class="drop">
+                    <a href="account.html"><li>Thông tin cá nhân</li> </a>
+                    <a href="sign.html"><li>Đăng nhập</li></a>
+                    <a href="sign.html"><li>Đăng ký</li></a>
+                </ul>
+            </div>
+            <i class="fas fa-bars menu hiden" id="menu-icon" style="margin-top: 2px;"></i>
+        </div>
+        </div>
+    </header>   
+    
+    <form action="" id="search">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm sản phẩm tại đây">
+        <label for="search-box" class="fa fa-search"></label>
+        <i class="fa fa-times" id="close"></i>
+    </form>
+
+    <section id="slide">
+        <div class="slider" style="width: 108%;">
+            <div class="slider-container">
+                <div class="slide"><img src="assets/banner1.png" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/banner2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/banner3.png" alt="Slide 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="list-bao" class="grid-container">
+        <div class="grid-item">
+            <div class="image-section">
+                <div class="text-section">
+                    <h2>[SPECIAL RELEASE] ‘CUỐN TỰ TRUYỆN’ DENKI JACKET - KÝ ỨC ĐÁNG GIÁ BAO NHIÊU?</h2>
+                    <div style="border-top: 3px solid rgb(66,66,66);"></div>
+                    <p>Denki Jacket - chiếc Bomber ‘lai’ Blazer đầu tiên ‘lăm le’ 
+                        xuất hiện trong những ngày gần đây không chỉ gây tò mò về hình dáng mà còn cả ý nghĩa đằng 
+                        sau một chiếc áo được Zune.zx chọn ra mắt vào dịp sinh nhật tròn 5 tuổi của mình.</p>
+                </div>
+                <img src="assets/bao1.jpg" alt="Your Image">
+            </div>
+            <div class="image-section">
+                <div class="text-section">
+                <p>Chất liệu 2 lớp dày dặn với dáng suông quen thuộc của một chiếc blazer ‘hệ Zune.zx’. Tuy nhiên, điểm khác biệt nằm ở phần cổ tay và vạt áo ‘giả’ bo chun cùng thiết kế túi chéo đối xứng đặc trưng của những chiếc bomber bụi bặm.</p>
+                <p>Chỉ có một chiếc cúc duy nhất ở phần cổ áo, không khoá zip, không cài khuy, Denki Jacket như một sự phá cách và thách thức với những người đam mê thời trang “ai quy định áo khoác phải có khuy cài và khoá kéo?</p>
+                <p>Thế nhưng, chừng ấy vẫn chưa đủ để goị Denki Jacket là ‘cuốn tự truyện’ của Zune.zx’? ‘Người kể câu chuyện của mình’ không bao giờ chỉ dừng lại ở ‘vẻ bề ngoài’.</p>
+                </div>
+                <img src="assets/bao2.jpg" alt="Your Image">
+            </div>
+            <div class="image-section">
+                <div class="text-section">
+                    <p>Denki Jacket mang trong mình dòng chảy của thời gian, của những lần khởi đầu khó khăn, chần chờ, e ngại, những quyết định có đúng, có sai, những thành tựu đạt được - 5 năm, 60 tháng, 1825 ngày… Con số 1825 được thêu nổi nơi ngực áo chính là câu trả lời “Ký ức đáng giá bao nhiêu?”. Có lẽ phải trả bằng cả thanh xuân, bằng niềm vui, nỗi buồn, bằng con người và cả những sự kiện lướt qua.</p>
+                    <p>1825 ngày cũng chính là khoảng thời gian những sản phẩm được thiết kế độc quyền bởi Zune.zx lần lượt ‘thai nghén’ và ‘ra đời’. Tất cả những Artwork ấy được in tỉ mỉ, quy tụ và toả sáng dưới ánh trăng đỏ nơi lưng áo.</p>
+                </div>
+                <img src="assets/bao3.jpg" alt="Your Image">
+            </div>
+            <div class="image-section">
+                <div class="text-section">
+                    <p>"OUR HEART UNDER THE SAME MOONLIGHT ARE FOREVER ONE"
+                        Đó cũng là thông điệp mà Zune.zx muốn gửi gắm qua siêu phẩm đặc biệt nhân dịp sinh nhật Zune.zx tròn 5 tuổi. Từ những gì trừu tượng nhất như kỉ niệm, như cảm xúc, đến những thứ hữu hình, như trang phục, con người… chúng ta đã, đang và sẽ gặp gỡ nhau, ở nơi sáng nhất, rực rỡ nhất, nơi mà những cái tôi khác biệt đều có thể tự tin là chính mình - SHINE UNDER THE MOON.</p>
+                </div>
+                <img src="assets/bao4.jpg" alt="Your Image">
+                <div class="text-section">
+                    <p>'DENKI JACKET' sẽ được công bố mở bán chính thức vào ngày 27.3 với mức giá 1,825,000VND lên kệ tại hệ thống cửa hàng Zune.zx Hà Nội, Sài Gòn, Đà Nẵng.
+                        Và sẽ TẶNG cho các hoá đơn > 3,000,000 trong chuỗi ngày diễn ra sự kiện Sinh Nhật Zune.zx tròn trịa 5 tuổi - Từ ngày 27/3 (Tại các Store) đến ngày 28,29,30/3 (Tại Website dành cho Online) đi kèm các ưu đãi "khủng" khá.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item1bao">
+            <h2>CÁC SỰ KIỆN KHÁC</h2>
+            <div style="border-top: 3px solid rgb(66,66,66);"></div>
+            <div class="image-listbao">
+                <div class="image-itembao">
+                    <img src="assets/2.jpg" alt="Image 1">
+                    <div class="image-captionbao">
+                        <a href="">ĐI SĂN 'SALE' SINH NHẬT ZUNE.ZX tròn 5 tuổi tự nhiên được chủ sốp TẶNG 5 ƯU ĐÃI rụng rời!!</a>
+                    </div>
+                </div>
+                <div class="image-itembao">
+                    <img src="assets/about_us2.jpg" alt="Image 2">
+                    <div class="image-captionbao">
+                        <a href="">[New Release] COMBO SIÊU PHẨM VALENTINE SS’22 NGẬP TRÀN ƯU ĐÃI MÙA YÊU</a>
+                    </div>
+                </div>
+                <div class="image-itembao">
+                    <img src="assets/about_us3.jpg" alt="Image 3">
+                    <div class="image-captionbao">
+                        <a href="">Chốt đơn ONLINE "lì xì" NISHI POKER LIMITED</a>
+                    </div>
+                </div>
+                <div class="image-itembao">
+                    <img src="assets/3.jpg" alt="Image 3">
+                    <div class="image-captionbao">
+                        <a href="">[NEW RELEASE] LOTUS KIMONO : KHI NÉT ĐẸP TRUYỀN THỐNG GIAO THOA CÙNG HƠI THỞ HIỆN ĐẠI</a>
+                    </div>
+                </div>
+                <div class="image-itembao">
+                    <img src="assets/about_us1.jpg" alt="Image 3">
+                    <div class="image-captionbao">
+                        <a href="">Ulatrrr MỪNG NĂM MỚI!! Đến Store GIEO QUẺ TRÚNG QUÀ "KHỦNG"</a>
+                    </div>
+                </div>
+                <div class="image-itembao">
+                    <img src="assets/bao1.jpg" alt="Image 3">
+                    <div class="image-captionbao">
+                        <a href="">RA MẮT BST iPHONE CASE MỚI, LÌ XÌ NGAY STICKER KOIZIE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Liên hệ</h3>
+                <a href=""><i class="fas fa-location-arrow"></i> 30/220, phường Cổ Nhuế 2, quận Bắc Từ Liêm, thành phố Hà Nội</a>
+                <a href=""><i class="fas fa-phone"></i> ZALO: 0332540272</a>
+                <a href=""><i class="fas fa-phone"></i> HOTLINE: 0963867931, 0332540272</a>
+                <a href=""><i class="fas fa-thumbtack"></i> SỈ: https://zalo.me/g/enadvl795</a>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <h3>ANIESTORE</h3>
+                    <a href=""><i class="fas fa-bolt"></i> Flash Sales</a>
+                    <a href=""><i class="fas fa-truck"></i> Free Ship</a>
+                    <a href=""><i class="fas fa-dollar-sign"></i> Thanh toán</a>
+                    <a href=""><i class="fas fa-shopping-cart"></i> Đặt hàng</a>
+                </div>
+                <div class="box-bottom">
+                    <h3>Chính sách</h3>
+                    <a href="">Chính sách vận chuyển</a>
+                    <a href="">Chính sách đổi trả</a>
+                    <a href="">Chính sách bảo mật</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-top">
+                    <h3>Thương hiệu</h3>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Blog</a>
+                    <a href="">Hệ thống cửa hàng</a>
+                    <a href="">Tuyển dụng</a>
+                    <a href="">Liên hệ</a>
+                </div>
+                <div class="box-bottom">
+                    <h3>Ưu đãi</h3>
+                    <a href="">Thẻ quà tặng</a>
+                    <a href="">Khách hàng thân thiết</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-top"><h3>Theo dõi trên</h3>
+                    <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href=""><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+                <div class="box-bottom box-mail">
+                    <h3>Đăng ký nhận mail từ Aniestore</h3>
+                    <input type="text" placeholder="Enter your email">
+                    <button>Đăng ký ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fas fa-copyright"></i> 2023 Thời trang Aniestore</p>
+        </div>
+    </section>
+<script src="js/slider.js"></script>
+<script src="js/res.js"></script>
+</body>
+</html>

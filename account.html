@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Hồ sơ cá nhân</title>
+   <link rel="shortcut icon" type="image/png" href="assets/logoAnie.png"/>
+   <meta name="author" content="Codeconvey" />
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="icofont/icofont.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="css/account1.css">
+</head>
+<body>   
+   <header>
+      <a href="index.html" class="logo"><img src="assets/logoAnie.png" alt=""></a>
+      <nav class="header">
+            <a class="active" href="home.html">Trang chủ</a>
+            <div class="item dropdown">
+               <a href="#wp-products">Sản phẩm</a>
+               <ul class="drop-1">
+                  <a style="padding: 0;" href="product.html"><li>Tất cả sản phẩm</li> </a>
+                  <a style="padding: 0;" href="ao.html"><li>Bộ Sưu Tập</li> </a>
+               </ul>
+            </div>
+            <div class="item dropdown">
+               <a href="#giam_gia">Sale off</a>
+               <ul class="drop-2">
+                  <a style="padding: 0;" href="saleoff.html"><li>Sắp diễn ra</li> </a>
+               </ul>
+            </div>
+            <a href="contactus.html">Liên hệ</a>
+            <a href="review.html">Đánh giá</a>
+            <a class="active" href="cuahang.html">Cửa hàng</a>
+      </nav>
+
+      <div id="actions" class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <div class="item shopping">
+               <div id="">
+                  <i class="icofont-cart cart"></i>
+               </div>
+               <span class="hart">0</span>
+               <div id="cart-items" class="L_cart hiden">
+                  <h1>Giỏ hàng <button id="showFormBtn">Đặt hàng</button></h1>
+                  <div class="ListCart">
+                        <div class="inner" style="display: flex; justify-content: space-between; font-size: 14px; margin:10px 40px; ">
+                           <p>Sản phẩm</p>
+                           <p>Giá</p>
+                           <p>Số lượng</p>
+                           <p>Chọn</p>
+                        </div>
+                  </div>
+                  <div class="CheckOut">
+                        <div class="total">Tổng tiền:&nbsp <b class="money">0</b>  <sup>đ</sup> </div>
+                        <div class="closeShopping">Close</div>
+                  </div>
+               </div>
+            </div>
+            <div id="overlay-dathang">
+               <i class="fas fa-times" id="closeButton"></i>
+            </div>
+            <div id="formContainer" style="display: none;">
+               <form id="myForm">
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Họ tên của bạn:</span>
+                           <input type="text" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                           <span>Số điện thoại: </span>
+                           <input type="text" placeholder="vd: 0123456789">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Tên sản phẩm:</span>
+                           <input type="test" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                           <span>Số lượng: </span>
+                           <input type="number" placeholder="vd: 0123456789">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Ngày đặt hàng: </span>
+                           <input type="datetime-local">
+                        </div>
+                        <div class="input">
+                           <span>Ngày có thể nhận hàng: </span>
+                           <input type="datetime-local">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Địa chỉ:</span>
+                           <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input">
+                           <span>Ghi chú: </span>
+                           <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                  </div>
+                  <input type="submit" value="Đặt hàng ngay" class="btn">
+               </form>
+            </div>
+
+            <div class="user-list dropdown">
+               <a href="#" class="fas fa-user"></a>
+               <ul class="drop">
+                  <a href="account.html"><li>Thông tin cá nhân</li> </a>
+                  <a href="sign.html"><li>Đăng nhập</li></a>
+                  <a href="sign.html"><li>Đăng ký</li></a>
+               </ul>
+            </div>
+            <i class="fas fa-bars menu hiden" id="menu-icon" style="margin-top: 2px;"></i>
+      </div>
+      </div>
+   </header>   
+
+   <form action="" id="search">
+         <input type="search" name="" id="search-box" placeholder="Tìm kiếm sản phẩm tại đây">
+         <label for="search-box" class="fa fa-search"></label>
+         <i class="fa fa-times" id="close"></i>
+   </form>
+   <div>
+      <div id="successMessage" class=""><i class="fas fa-solid fa-check fa-bounce"></i><span>Lưu thông tin thành công!</span></div>
+      <div class="container">
+         <div class="card"> 
+               <div class="avata">
+                  <img src="/assets/an.png" alt="" class="profile-img">
+                  <p><span id="name" contenteditable="false"> <strong>Nhóm 1</strong> </span> </p>
+               </div>
+               <hr>
+               <div class="card-body">
+               <p><strong>ID:</strong> <span id="idCell">20032003</span></p>
+               <p><strong>Số điện thoại:</strong> <span id="phoneCell">0123456789</span></p>
+               <p><strong>Địa chỉ:</strong> <span id="addressCell">Hà Nội</span></p>
+               </div>
+               <div>
+               <button id="editButton" onclick="enableEdit()" style="margin-left: 19px; margin-top: 10px;">Sửa thông tin</button>
+               <button id="saveButton" style="margin-left: 19px; margin-top: 10px;" class="hiden" onclick="saveChanges()">Lưu thông tin</button>
+               </div>
+         </div>
+         <div class="in4">
+               <div class="in4-ca-nhan">
+                  <div class="in4-ca-nhan-header">
+                     <p><i class="far fa-clone pr-1"></i><strong>Thông tin cá nhân</strong></p>
+                  </div>
+                  <div class="in4-ca-nhan-body">
+                     <table>
+                           <tbody>
+                              <tr>
+                                 <th width="30%"><strong>Họ và tên</strong></th>
+                                 <td width="2%">:</td>
+                                 <td id="nameCell" contenteditable="false">Nhóm 1</td>
+                              </tr>
+                              <tr>
+                                 <th width="30%"><strong>Ngày sinh</strong></th>
+                                 <td width="2%">:</td>
+                                 <td id="birthdayCell" contenteditable="false">10/10/2003</td>
+                              </tr>
+                              <tr>
+                                 <th width="30%"><strong>Giới tính</strong></th>
+                                 <td width="2%">:</td>
+                                 <td id="genderCell" contenteditable="false">Nam</td>
+                              </tr>
+                              <tr>
+                                 <th width="30%"><strong>Email</strong></th>
+                                 <td width="2%">:</td>
+                                 <td id="emailCell" contenteditable="false">nhom1@gmail.com</td>
+                              </tr>
+                              <tr>
+                                 <th style="border: none;">
+                                       <button id="editButton2" onclick="enableEdit2()">Sửa thông tin</button>
+                                       <button id="saveButton2" class="hiden2" onclick="saveChanges2()">Lưu thay đổi</button>
+                                 </th>
+                              </tr>
+                           </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="in4-khac">
+                  <div class="in4-khac-header">
+                     <p><i class="far fa-clone pr-1"></i><strong> Thông tin khác</strong></p>
+                  </div>
+                  <div class="in4-khac-body">
+                     <p contenteditable="false" id="introduce">Vui lòng cập nhật thông tin thật chính xác</p>
+                  </div>
+                  <button id="editButton3" style="margin: 0; margin-top: 5px;"  onclick="enableEdit3()">Sửa thông tin</button>
+                  <button id="saveButton3" class="hiden3" style="margin: 0; margin-top: 5px;"  onclick="saveChanges3()">Lưu thông tin</button>
+               </div>
+         </div>
+      </div>
+   </div>
+   <section class="footer">
+      <div class="box-container">
+         <div class="box">
+            <h3>Liên hệ</h3>
+            <a href=""><i class="fas fa-location-arrow"></i> 30/220, phường Cổ Nhuế 2, quận Bắc Từ Liêm, thành phố Hà Nội</a>
+            <a href=""><i class="fas fa-phone"></i> ZALO: 0332540272</a>
+            <a href=""><i class="fas fa-phone"></i> HOTLINE: 0963867931, 0332540272</a>
+            <a href=""><i class="fas fa-thumbtack"></i> SỈ: https://zalo.me/g/enadvl795</a>
+         </div>
+         <div class="box">
+            <div class="box-top">
+               <h3>ANIESTORE</h3>
+               <a href=""><i class="fas fa-bolt"></i> Flash Sales</a>
+               <a href=""><i class="fas fa-truck"></i> Free Ship</a>
+               <a href=""><i class="fas fa-dollar-sign"></i> Thanh toán</a>
+               <a href=""><i class="fas fa-shopping-cart"></i> Đặt hàng</a>
+            </div>
+            <div class="box-bottom">
+               <h3>Chính sách</h3>
+               <a href="">Chính sách vận chuyển</a>
+               <a href="">Chính sách đổi trả</a>
+               <a href="">Chính sách bảo mật</a>
+            </div>
+         </div>
+         <div class="box">
+            <div class="box-top">
+               <h3>Thương hiệu</h3>
+               <a href="">Giới thiệu</a>
+               <a href="">Blog</a>
+               <a href="">Hệ thống cửa hàng</a>
+               <a href="">Tuyển dụng</a>
+               <a href="">Liên hệ</a>
+            </div>
+            <div class="box-bottom">
+               <h3>Ưu đãi</h3>
+               <a href="">Thẻ quà tặng</a>
+               <a href="">Khách hàng thân thiết</a>
+            </div>
+         </div>
+         <div class="box">
+            <div class="box-top"><h3>Theo dõi trên</h3>
+               <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+               <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+               <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+               <a href=""><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            <div class="box-bottom box-mail">
+               <h3>Đăng ký nhận mail từ Aniestore</h3>
+               <input type="text" placeholder="Enter your email" name="email" autocomplete="email">
+               <button>Đăng ký ngay</button>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p><i class="fas fa-copyright"></i> 2023 Thời trang Aniestore</p>
+      </div>
+   </section>
+   <script src="js/res.js"></script>
+   <script src="js/account.js"></script>
+</body>
+</html>

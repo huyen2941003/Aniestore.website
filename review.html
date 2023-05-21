@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Đánh giá</title>
+   <link rel="shortcut icon" type="image/png" href="assets/logoAnie.png"/>
+   <meta name="author" content="Codeconvey" />
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="icofont/icofont.min.css">
+   <link rel="stylesheet" href="css/review.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bao.css">
+   </head>
+   <body>
+      <section id="slide">
+         <div class="slider">
+            <div class="slider-container">
+               <div class="slide"><img src="assets/banner1.png" alt="Slide 1"></div>
+               <div class="slide"><img src="assets/banner2.png" alt="Slide 2"></div>
+               <div class="slide"><img src="assets/banner3.png" alt="Slide 3"></div>
+            </div>
+         </div>
+      </section>
+      <header>
+      <a href="index.html" class="logo"><img src="assets/logoAnie.png" alt=""></a>
+      <nav class="header">
+            <a class="active" href="home.html">Trang chủ</a>
+            <div class="item dropdown">
+               <a href="#wp-products">Sản phẩm</a>
+               <ul class="drop-1">
+                  <a style="padding: 0;" href="product.html">
+                        <li>Tất cả sản phẩm</li>
+                  </a>
+                  <a style="padding: 0;" href="ao.html">
+                        <li>Bộ Sưu Tập</li>
+                  </a>
+               </ul>
+            </div>
+            <div class="item dropdown">
+               <a href="#giam_gia">Sale off</a>
+               <ul class="drop-2">
+                  <a style="padding: 0;" href="saleoff.html">
+                        <li>Sắp diễn ra</li>
+                  </a>
+               </ul>
+            </div>
+            <a href="contactus.html">Liên hệ</a>
+            <a href="review.html">Đánh giá</a>
+            <a class="active" href="cuahang.html">Cửa hàng</a>
+      </nav>
+
+      <div id="actions" class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <div class="item shopping">
+               <div id="">
+                  <i class="icofont-cart cart"></i>
+               </div>
+               <span class="hart">0</span>
+               <div id="cart-items" class="L_cart hiden">
+                  <h1>Giỏ hàng <button id="showFormBtn">Đặt hàng</button></h1>
+                  <div class="ListCart">
+                        <div class="inner"
+                           style="display: flex; justify-content: space-between; font-size: 14px; margin:10px 40px; ">
+                           <p>Sản phẩm</p>
+                           <p>Giá</p>
+                           <p>Số lượng</p>
+                           <p>Chọn</p>
+                        </div>
+                  </div>
+                  <div class="CheckOut">
+                        <div class="total">Tổng tiền:&nbsp <b class="money">0</b> <sup>đ</sup> </div>
+                        <div class="closeShopping">Close</div>
+                  </div>
+               </div>
+            </div>
+            <div id="overlay-dathang">
+               <i class="fas fa-times" id="closeButton"></i>
+            </div>
+            <div id="formContainer" style="display: none;">
+               <form id="myForm">
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Họ tên của bạn:</span>
+                           <input type="text" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                           <span>Số điện thoại: </span>
+                           <input type="text" placeholder="vd: 0123456789">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Tên sản phẩm:</span>
+                           <input type="test" placeholder="vd: Nguyễn Thị Thu Huyền">
+                        </div>
+                        <div class="input">
+                           <span>Số lượng: </span>
+                           <input type="number" placeholder="vd: 0123456789">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Ngày đặt hàng: </span>
+                           <input type="datetime-local">
+                        </div>
+                        <div class="input">
+                           <span>Ngày có thể nhận hàng: </span>
+                           <input type="datetime-local">
+                        </div>
+                  </div>
+                  <div class="inputBox">
+                        <div class="input">
+                           <span>Địa chỉ:</span>
+                           <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input">
+                           <span>Ghi chú: </span>
+                           <textarea name="" id="địa chỉ" cols="30" rows="10"></textarea>
+                        </div>
+                  </div>
+                  <input type="submit" value="Đặt hàng ngay" class="btn">
+               </form>
+            </div>
+
+            <div class="user-list dropdown">
+               <a href="#" class="fas fa-user"></a>
+               <ul class="drop">
+                  <a href="account.html">
+                        <li>Thông tin cá nhân</li>
+                  </a>
+                  <a href="sign.html">
+                        <li>Đăng nhập</li>
+                  </a>
+                  <a href="sign.html">
+                        <li>Đăng ký</li>
+                  </a>
+               </ul>
+            </div>
+            <i class="fas fa-bars menu hiden" id="menu-icon" style="margin-top: 2px;"></i>
+      </div>
+      </div>
+   </header>
+      <div class="wrapper">
+         <i class="fas fa-chevron-left"></i>
+      <ul class="carousel">
+         <li class="card">
+            <div class="img"><img src="assets/huyen.jpg" alt="img" draggable="false"></div>
+            <h2>Nguyễn Thị Thu Huyền</h2>
+            <span>Áo đẹp lắm íi, shop tv nhiệt tình, mấy b tầm m5 cũng có thể vừa nhaaa, ban đầu mình sợ áo rộng và to so với người mình nhma nhận hàng thì mặc vừa lắm í, nên mua nha mn</span>
+         </li>
+         <li class="card">
+            <div class="img"><img src="assets/an.png" alt="img" draggable="false"></div>
+            <h2>Bùi Khánh An</h2>
+            <span>Đẹp nhaaa👍🏻Vải ko dày ko mỏng rất vừa vặn ,mặc ko bị nóng nha,mình 1m5 mặc qua mông nói chung là vừa ko chật ko rộng tùy theo cách mặc của mọi người nè</span>
+         </li>
+         <li class="card">
+            <div class="img"><img src="assets/nhanvien_minhduc.jpg" alt="img" draggable="false"></div>
+            <h2>Nguyễn Minh Đức</h2>
+            <span>Vải vừa đủ không dày cũng không mỏng, không có chỉ thừa vừa rẻ lại vừa đẹp nên mua nha mn. Nên mua lắm nha mọi người ơi, mình rất ưng đó ạ</span>
+         </li>
+         <li class="card">
+            <div class="img"><img src="assets/3.jpg" alt="img" draggable="false"></div>
+            <h2>Abc</h2>
+            <span>Hình ảnh chỉ mang tính chất nhận xu nha nhưng mà áo không có túi huhu 😭trơi à mà quên mất là mất hết cả lên rồi thì phải có cái gì đấy thì cũng phải biết</span>
+         </li>
+         <li class="card">
+            <div class="img"><img src="assets/sanpham3.jpg" alt="img" draggable="false"></div>
+            <h2>Xyz</h2>
+            <span>Áo đẹp không chê được giao hàng nhanh đóng gói cẩn thận hình ảnh và video mang tính chất nhận xu. Cảm ơn shop rất nhiều đó ạaaaaaaaaaaaaaaaaaa</span>
+         </li>
+         <li class="card">
+            <div class="img"><img src="assets/sanpham9.jpg" alt="img" draggable="false"></div>
+            <h2>Klm</h2>
+            <span>Áo xiu xiu đẹp luôn mình m56 chùm mông ạ mặc thoải mái lắm lun đỉnh. Sẽ quay lại mua hàng trong lần tiếp theo nha. Mong shop update hàng mới về sớm ạ</span>
+         </li>
+      </ul>
+      <i class="fas fa-chevron-right"></i>
+      </div>
+      <section class="footer">
+      <div class="box-container">
+            <div class="box">
+               <h3>Liên hệ</h3>
+               <a href=""><i class="fas fa-location-arrow"></i> 30/220, phường Cổ Nhuế 2, quận Bắc Từ Liêm, thành
+                  phố Hà Nội</a>
+               <a href=""><i class="fas fa-phone"></i> ZALO: 0332540272</a>
+               <a href=""><i class="fas fa-phone"></i> HOTLINE: 0963867931, 0332540272</a>
+               <a href=""><i class="fas fa-thumbtack"></i> SỈ: https://zalo.me/g/enadvl795</a>
+            </div>
+            <div class="box">
+               <div class="box-top">
+                  <h3>ANIESTORE</h3>
+                  <a href=""><i class="fas fa-bolt"></i> Flash Sales</a>
+                  <a href=""><i class="fas fa-truck"></i> Free Ship</a>
+                  <a href=""><i class="fas fa-dollar-sign"></i> Thanh toán</a>
+                  <a href=""><i class="fas fa-shopping-cart"></i> Đặt hàng</a>
+               </div>
+               <div class="box-bottom">
+                  <h3>Chính sách</h3>
+                  <a href="">Chính sách vận chuyển</a>
+                  <a href="">Chính sách đổi trả</a>
+                  <a href="">Chính sách bảo mật</a>
+               </div>
+            </div>
+            <div class="box">
+               <div class="box-top">
+                  <h3>Thương hiệu</h3>
+                  <a href="">Giới thiệu</a>
+                  <a href="">Blog</a>
+                  <a href="">Hệ thống cửa hàng</a>
+                  <a href="">Tuyển dụng</a>
+                  <a href="">Liên hệ</a>
+               </div>
+               <div class="box-bottom">
+                  <h3>Ưu đãi</h3>
+                  <a href="">Thẻ quà tặng</a>
+                  <a href="">Khách hàng thân thiết</a>
+               </div>
+            </div>
+            <div class="box">
+               <div class="box-top">
+                  <h3>Theo dõi trên</h3>
+                  <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                  <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                  <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+                  <a href=""><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+               </div>
+               <div class="box-bottom box-mail">
+                  <h3>Đăng ký nhận mail từ Aniestore</h3>
+                  <input type="text" placeholder="Enter your email">
+                  <button>Đăng ký ngay</button>
+               </div>
+            </div>
+      </div>
+      <div class="copyright">
+            <p><i class="fas fa-copyright"></i> 2023 Thời trang Aniestore</p>
+      </div>
+   </section>
+   </body>
+   <script src="js/review.js"></script>
+   <script src="js/res.js"></script>
+   <script src="js/slider.js"></script>
+</html>
