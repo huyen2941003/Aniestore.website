@@ -1,0 +1,102 @@
+
+#header {
+    top: 0;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"]{
+    font: 400 16px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+/* .slider {
+    width: 108%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: -30px;
+    margin-left: -30px;
+} */
+#contact{
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    width: 500px;
+    height: 440px;
+}
+
+#contact h4{
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+fieldset{
+    border: medium none !important;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 15px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover{
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(29,26,26);
+    color: #FFF;
+    margin: 0 0 5px 0px;
+    padding: 18px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#contact button[type="submit"]:hover{
+    background-color: rgb(78, 78, 78);
+}
+@media only screen and (min-device-width:768px)and (max-device-width:1024px) {
+    #containner {
+        margin-bottom: -400px;
+        margin-top: 245.2px;
+    }
+    .footer  {
+        margin-top: -265px;
+    }
+    #contact {
+        margin: 200px auto;
+        padding: 30px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        width: 500px;
+        height: 440px;
+        /* margin-bottom: -1200px; */
+    }
+}

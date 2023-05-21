@@ -1,0 +1,89 @@
+/* body{
+  background: #000000;
+} */
+
+.slider {
+  width: 108%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 70px 150px 60px 150px;
+    overflow: hidden;
+    height: 620px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-y: scroll; /* Cho phép cuộn dọc */
+    height: 100%;
+    box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .grid-item1 #map{
+    width: 100%;
+    height: 650px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .text-section {
+    padding-left: 20px;
+  }
+
+  .grid-container p{
+    font-size: 15px;
+    margin: 10px 10px 5px 0px;
+    color: #000000;
+  }
+  .grid-container h2{
+    font-size: 25px;
+    color: #000000;
+    margin-top: 14px;
+  }
+  @media only screen and (min-device-width:768px)and (max-device-width:1024px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 70px 150px 60px 150px;
+      overflow: hidden;
+      height: 620px;
+      width: 100%;
+  }
+  #Ban_do {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+#giam_gia{
+    margin-top: 60px;
+}
+#giam_gia .list-sanpham .gia-giamgia .btn {
+    margin-top: 10px;
+    background-color: rgb(52, 52, 52);
+    margin-left: 30px;
+}
+#giam_gia .list-sanpham .gia-giamgia .btn:hover{
+    background-color: rgb(73, 73, 73);
+}
+.sale{
+    margin: -50px 150px 0px 150px;
+}
+
+#list h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: normal;
+    color: rgb(33, 32, 32);
+}
+.sale .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sale .row .image{
+    flex: 1 1 45rem;
+}
+.sale .row .image img{
+    width: 75%;
+}
+
+.sale .row .image1{
+    flex: 1 1 45rem;
+}
+.sale .row .image1 img{
+    width: 80%;
+    margin-left: 120px;
+}
+.sale .row .content{
+    flex: 1 1 45rem;
+}
+
+.sale .row .content h4{
+    color: rgb(66, 66, 66);
+    font-size: 30px;
+    padding: .5rem 0;
+    font-weight: normal;
+}
+
+.sale .row .content p{
+    color: var(--black);
+    font-size: 18px;
+    padding: .5rem 0;
+}
+
+.sale .row .content .icon-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.sale .row .content .icon-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: 5px solid rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 10px;
+    margin: 0px 320px 0px 0px;
+}
+
+.sale .row .content .icon-container .icons:hover{
+    background-color: rgb(193, 193, 193);
+}
+
+.sale .row .content .icon-container .icons i{
+    font-size: 2.5rem;
+    color: rgb(33, 32, 32);
+}
+
+.sale .row .content .icon-container .icons span{
+    font-size: 1.5rem;
+    color: rgb(33, 32, 32);
+}
+
+@media only screen and (min-device-width:768px)and (max-device-width:1024px) {
+
+    #giam_gia {
+        margin-bottom: -200px;
+    }
+    .sale .row .image img {
+        margin-left: 130px;
+        height: 500px;
+        width: 500px;
+    }
+    .sale {
+        margin-left: -10px;
+    }
+    .image1 {
+        margin-right: 95px;     
+        width: 500px;
+        height: 500px;
+    }
+    .footer {
+        margin-top: 1000px;
+    }
+}

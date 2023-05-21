@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    font-size: 18px;
+    padding: 40px 200px 40px 200px;
+    margin-top: 220px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    min-height: 1px;
+    background: #fff;
+    margin-bottom: -60px;
+}
+
+.container .card {
+    border-radius: 10px;
+    max-width: 33.3333%;
+    background-color: #fff;
+}
+.container .card .name {
+    font-size: 20px;
+}
+hr {
+    margin-top: 10px;
+    border: none;
+    border-top: 1px solid #dddddd;
+}
+
+.container .card-body {
+    margin-top: 38px;
+}
+
+.container .card-body p {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.container .card .avata {
+    text-align: center;
+    padding: 20px;
+}
+
+.container .card .avata .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid rgb(204, 204, 204);
+    border-radius: 50%;
+}
+
+.container .in4 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+
+.container .in4 .in4-ca-nhan {
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container .in4 .in4-ca-nhan .in4-ca-nhan-header {
+    margin-bottom: 10px;
+}
+
+.container .in4 .in4-khac .in4-khac-header {
+    margin-bottom: 10px;
+}
+
+.container .in4 .in4-khac {
+    border-radius: 10px;
+    background-color: #fff; 
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+button {
+    padding: 10px;
+    margin-left: -8.5px;
+    font-size: 20px;
+    background-color: #ccc;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.editable {
+    background-color: #f2f2f2;
+}
+.hiden {
+    display: none;
+}
+.hiden2 {
+    display: none;
+}
+.hiden3 {
+    display: none;
+}
+#successMessage {
+    position: fixed;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(103, 178, 111);
+    padding: 10px;
+    margin-top: -100px;
+    font-size: 20px;
+    z-index: 99;
+    display: none;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    right: 0;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+    
+#successMessage span {
+    margin-left: 10px;
+}
+#successMessage i {
+    padding: 10px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    color: green;
+}
+
+
+@media only screen and (min-device-width:768px)and (max-device-width:1024px) {
+    .card-body {
+        width: 300px;
+    }
+
+    .in4 {
+        margin-left: 150px;
+    }
+    .in4-khac {
+        width: 400px;
+    }
+    .avata, hr {
+        width: 250px;
+    }
+    .container {
+        font-size: 18px;
+        padding: 40px 200px 40px 200px;
+        margin-top: 220px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 1000px;
+        margin-left: 20px;
+        min-height: 1px;
+        background: #fff;
+        margin-bottom: -60px;
+    }
+    button {
+        width: 140px;
+    }
+    #successMessage {
+        margin-top: -150px;
+    }
+}
